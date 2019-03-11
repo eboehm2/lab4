@@ -24,6 +24,7 @@
             -webkit-box-shadow: -1px 7px 23px -10px rgba(0,0,0,0.75);
 -moz-box-shadow: -1px 7px 23px -10px rgba(0,0,0,0.75);
 box-shadow: -1px 7px 23px -10px rgba(0,0,0,0.75);
+
         }
 
         .main-container-grid {
@@ -109,6 +110,14 @@ box-shadow: -1px 7px 23px -10px rgba(0,0,0,0.75);
             max-height: 130px;
 
         }
+        .c2-first-row {
+            grid-column: 1/5;
+        }
+        .grid-button{
+            padding:6px 12px;
+            background-color: #ccc;
+            float:right;
+        }
     </style>
 </head>
 
@@ -118,8 +127,9 @@ box-shadow: -1px 7px 23px -10px rgba(0,0,0,0.75);
         <h2>Edward Boehm</h2>
     </div>
     <div class="r2 three-column">
-        <div class ="c1">
+        <div class ="c1 box-shadow">
             <h2 class ="txt-center">Navigation</h2>
+            
             <ul class = "left-nav">
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./about.html">About</a></li>
@@ -130,7 +140,10 @@ box-shadow: -1px 7px 23px -10px rgba(0,0,0,0.75);
             </ul>
         </div>
         <div class ="c2 box-shadow">
-                <!-- <h2 class ="txt-center h2-content">Recent Product</h2> -->
+            <div class="c2-first-row">       
+                <a href="./gallery-table.html" class= "grid-button">Grid View</a>
+                <h2 class ="txt-center h2-content">Gallery</h2></div>
+         
                 
                     <img class="box-shadow" src="./img/image1.jpg">
                     <img class="box-shadow" src="./img/image2.jpg">
